@@ -23,19 +23,19 @@ function playRound(playerSelection, computerSelection) {
     return `You Lose! ${computerSelection} beats ${playerSelection}`;
 
 }
-
+let results = document.querySelector(".results");
 
 let rockButton = document.querySelector("#rock");
 rockButton.addEventListener('click',()=>{
-    console.log(playRound("Rock", getComputerChoice()));
+    results.textContent=playRound("Rock", getComputerChoice());
 })
 
 let paperButton= document.querySelector("#paper");
 paperButton.addEventListener('click',()=>{
-    console.log(playRound("Paper", getComputerChoice()));
+    results.textContent=playRound("Paper", getComputerChoice());
 });
 
 let scissorsButton=document.querySelector("#scissors");
 scissorsButton.addEventListener('click', ()=>{
-    console.log(playRound("Scissors", getComputerChoice()));
+    results.textContent=playRound("Scissors", getComputerChoice());
 })
