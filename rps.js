@@ -13,8 +13,8 @@ function getComputerChoice() {
 
 
 function playRound(playerSelection, computerSelection) {
-    playerSelectionLower = playerSelection.toLowerCase();
-    computerSelectionLower = computerSelection.toLowerCase();
+    let playerSelectionLower = playerSelection.toLowerCase();
+    let computerSelectionLower = computerSelection.toLowerCase();
 
     if (playerSelectionLower === computerSelectionLower) return "It's a Tie!";
 
